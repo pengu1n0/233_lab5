@@ -15,7 +15,18 @@ int main()
             else
                 j++;
 		}
+		j=0;
+        if(sum==1)
+        {
+            a++;
+            if(a==n)
+            {
+                printf("%d",i);
+                break;
+            }
+        }
 	}
+	
 	
 		
 }
