@@ -17,3 +17,23 @@ int main ()
 			s[i] = 0;
 			s[i-1] = num;
 		}
+		else if (strcmp(token, "-") == 0) {
+			i--;
+			num = s[i-1] - s[i];
+			s[i] = 0;
+			s[i-1] = num;
+		} 
+		else if (strcmp(token, "*") == 0) {
+			i--;
+			num = s[i-1] * s[i];
+			s[i] = 0;
+			s[i-1] = num;
+		} else {
+			s[i] = atoi(token);
+			i++;
+		}
+		token = strtok(NULL, " ");
+		}
+	printf("%d", num);
+	return 0;
+}
