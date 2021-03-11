@@ -6,10 +6,26 @@ int main()
     if(n%2==0)
     {
         n--;
-        m++;
-        a=((n+summ)/2)-1;
+        sum++;
+        a=((n+sum)/2)-1;
     }
     else
     {
-        a=((n+summ)/2);
+        a=((n+sum)/2);
     }
+    for(i=0;i<(n+sum)/2;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            if(j==(n/2)-i||j==(n/2)+i)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf("_");
+            }
+        }
+        printf("\n");
+    }
+}
