@@ -28,4 +28,20 @@ int main()
         }
         printf("\n");
     }
+    for(i=0;i<=a;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            if(j==i||j==(n-1)-i)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf("_");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
 }
